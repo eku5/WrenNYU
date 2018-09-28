@@ -225,6 +225,7 @@
           <e p="AudioManager.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="CharacterJump.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
           <e p="Walking.cs" t="Include" />
           <e p="WalkingLoop.cs" t="Include" />
         </e>
@@ -237,6 +238,6 @@
       </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_2D Robo Wren.240696427.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_2D Robo Wren.-369959301.00" t="ExcludeRecursive" />
   </component>
 </project>
