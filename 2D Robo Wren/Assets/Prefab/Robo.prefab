@@ -281,9 +281,6 @@ GameObject:
   - component: {fileID: 95059696487402056}
   - component: {fileID: 50986254791088080}
   - component: {fileID: 61567087973446688}
-  - component: {fileID: 114159912074992818}
-  - component: {fileID: 114565986048402862}
-  - component: {fileID: 114547817515065912}
   - component: {fileID: 114232470036435464}
   m_Layer: 0
   m_Name: Robo
@@ -956,19 +953,6 @@ MonoBehaviour:
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4544759753476074}
   m_AttachedIK: {fileID: 114691626347660960}
---- !u!114 &114159912074992818
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1546360096968284}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 214704746400e4166af0cf8c7259912e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkspeed: 2.6
-  facingRight: 1
 --- !u!114 &114186043059179160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1219,29 +1203,6 @@ MonoBehaviour:
   m_Bones: []
   m_BoneTransforms:
   - {fileID: 4954352200690940}
---- !u!114 &114547817515065912
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1546360096968284}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5a396a4daff84a94a2535c31542be9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpHeight: {x: 0, y: 1}
---- !u!114 &114565986048402862
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1546360096968284}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccac22f42a6994362a4bb58d8997aaf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114598231456346180
 MonoBehaviour:
   m_ObjectHideFlags: 1
