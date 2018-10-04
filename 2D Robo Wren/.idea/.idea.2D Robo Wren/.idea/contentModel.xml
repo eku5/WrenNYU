@@ -222,12 +222,14 @@
           <e p="Version.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="Archived Scripts" t="Include">
+            <e p="CharacterJump.cs" t="Include" />
+            <e p="Walking.cs" t="Include" />
+            <e p="WalkingLoop.cs" t="Include" />
+          </e>
           <e p="AudioManager.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
-          <e p="CharacterJump.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
-          <e p="Walking.cs" t="Include" />
-          <e p="WalkingLoop.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />

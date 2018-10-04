@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 114159912074992818}
   - component: {fileID: 114565986048402862}
   - component: {fileID: 114547817515065912}
+  - component: {fileID: 114232470036435464}
   m_Layer: 0
   m_Name: Robo
   m_TagString: Player
@@ -874,10 +875,10 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 5
+  m_Material: {fileID: 6200000, guid: 04210f1e85c49449bb8c574254ea6d50, type: 2}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &61567087973446688
@@ -961,12 +962,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1546360096968284}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 214704746400e4166af0cf8c7259912e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkspeed: 2
+  walkspeed: 2.6
   facingRight: 1
 --- !u!114 &114186043059179160
 MonoBehaviour:
@@ -1040,6 +1041,20 @@ MonoBehaviour:
   m_Child: {fileID: 0}
   m_ChildTransform: {fileID: 4829639828571620}
   m_AttachedIK: {fileID: 114769931859970300}
+--- !u!114 &114232470036435464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1546360096968284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64a797c4ad28640da838d24f25302408, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 70
+  walkForce: 40
+  dragAmount: 0.4
 --- !u!114 &114250097249134550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1210,12 +1225,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1546360096968284}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5a396a4daff84a94a2535c31542be9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: {x: 0, y: 0}
+  jumpHeight: {x: 0, y: 1}
 --- !u!114 &114565986048402862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1443,16 +1458,16 @@ MonoBehaviour:
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 4209540877647480}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.9970079, w: -0.07729946}
+      solverRotation: {x: 0, y: 0, z: 0.7316617, w: 0.6816679}
       defaultLocalRotation: {x: 0, y: 0, z: 0.99502236, w: 0.09965226}
     - m_Bone: {fileID: 0}
       m_BoneTransform: {fileID: 4211809194866642}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0.219578, w: 0.97559494}
+      solverRotation: {x: 0, y: 0, z: 0.60264146, w: 0.7980121}
       defaultLocalRotation: {x: 0, y: 0, z: 0, w: 1}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -2.636, y: -0.984, z: 0}
+    targetPosition: {x: -3.1432, y: -0.659272, z: 0}
     flip: 0
 --- !u!114 &114947649050612656
 MonoBehaviour:

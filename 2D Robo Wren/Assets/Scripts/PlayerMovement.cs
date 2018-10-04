@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
 		{
 			weJumped = true;
 		}
@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour {
 			rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 		}
 
-		if (Input.GetKey(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+		if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
 		{
 			rb.AddForce(Vector2.right * walkForce);
 		}
@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			rb.velocity = new Vector2(Mathf.Min(0, rb.velocity.x), rb.velocity.y);
 		}
-		if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+		if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
 		{
 			rb.AddForce(Vector2.left * walkForce);
 		}
@@ -47,10 +47,22 @@ public class PlayerMovement : MonoBehaviour {
 			rb.velocity = new Vector2(Mathf.Max(0, rb.velocity.x), rb.velocity.y);
 		}
 		
-		if (!Input.GetKey(KeyCode.Space))
+		//What does this do? Why does this work?
+		/*if (!Input.GetKey(KeyCode.UpArrow))
+		
+		//But why don't these work?
+		//if (!Input.GetKey(KeyCode.Space) || !Input.GetKey(KeyCode.UpArrow) || !Input.GetKey(KeyCode.W))
+		//if (!Input.GetKeyDown(KeyCode.Space) || !Input.GetKeyDown(KeyCode.UpArrow) || !Input.GetKeyDown(KeyCode.W))
 		{
 			rb.velocity = new Vector2(rb.velocity.x, Mathf.Min(0, rb.velocity.y));
 		}
+		*/
+		//This is a simplified more clean version of whatever happened above.
+		if (!Input.GetKey(KeyCode.W))
+		{
+			rb.velocity = new Vector2(rb.velocity.x, Mathf.Min(0, rb.velocity.y));
+		}
+		
 		//adds counter force based on squared velocity
 		rb.AddForce(-rb.velocity.normalized * rb.velocity.sqrMagnitude * dragAmount);
 		grounded = false;
